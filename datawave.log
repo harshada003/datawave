@@ -1,0 +1,456 @@
+INFO  2021-12-24 11:13:38,086 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@f5a0690'
+INFO  2021-12-24 11:13:38,118 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@f5a0690'
+INFO  2021-12-24 11:13:45,129 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx2.log
+INFO  2021-12-24 11:13:45,140 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx2.log
+INFO  2021-12-24 11:13:45,196 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 11:13:45,532 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: datawaveFlow
+INFO  2021-12-24 11:13:45,628 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-12-24 11:13:45,846 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2021-12-24 11:13:45,846 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2021-12-24 11:13:45,854 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 11:13:45,885 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: datawaveFlow
+INFO  2021-12-24 11:13:46,224 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+WARN  2021-12-24 11:13:46,227 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.configuration.descriptor.YamlMuleAgentDescriptor: Descriptor file E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\conf\datawave.yml not found.
+WARN  2021-12-24 11:13:46,228 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.services.application.AgentApplicationService: Application fragment not found for application: datawave
+INFO  2021-12-24 11:13:46,228 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: datawave                                              *
+* OS encoding: windows-1252, Mule encoding: UTF-8                    *
+*                                                                    *
+**********************************************************************
+INFO  2021-12-24 11:15:38,953 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @17cb327f] [processor: datawaveFlow/processors/1; event: b91360e0-647c-11ec-8569-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@324375a2
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:52148
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=f1b8fa11-c750-4bd4-bff7-df04ee09e826
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+INFO  2021-12-24 11:27:36,485 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @17cb327f] [processor: datawaveFlow/processors/1; event: 64fe5850-647e-11ec-8569-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@62649ed4
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:52185
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=text/plain
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=e0d75162-e64a-4219-b235-8e981633e85b
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=241
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+ERROR 2021-12-24 11:28:08,865 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @17cb327f] [processor: ; event: 78402790-647e-11ec-8569-ac120301260c] org.mule.runtime.core.internal.exception.OnErrorPropagateHandler: 
+********************************************************************************
+Message               : "Unexpected character 'U' at payload@[2:15] (line:column), expected false or true or null or {...} or [...] or number but was , while reading `payload` as Json.
+ 
+2|     "airline":United",
+                 ^" evaluating expression: "%dw 2.0
+output application/json
+---
+payload".
+Element               : datawaveFlow/processors/0 @ datawave:datawave.xml:13 (Transform Message)
+Element DSL           : <ee:transform doc:name="Transform Message" doc:id="ece1fedc-f745-4178-b085-a264175b7304">
+<ee:message>
+<ee:set-payload><![CDATA[
+%dw 2.0
+output application/json
+---
+payload
+]]></ee:set-payload>
+</ee:message>
+</ee:transform>
+Error type            : MULE:EXPRESSION
+FlowStack             : at datawaveFlow(datawaveFlow/processors/0 @ datawave:datawave.xml:13 (Transform Message))
+
+  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+
+ERROR 2021-12-24 11:28:35,243 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @17cb327f] [processor: ; event: 8805ef70-647e-11ec-8569-ac120301260c] org.mule.runtime.core.internal.exception.OnErrorPropagateHandler: 
+********************************************************************************
+Message               : "Unexpected character 'u' at payload@[2:15] (line:column), expected false or true or null or {...} or [...] or number but was , while reading `payload` as Json.
+ 
+2|     "airline":united",
+                 ^" evaluating expression: "%dw 2.0
+output application/json
+---
+payload".
+Element               : datawaveFlow/processors/0 @ datawave:datawave.xml:13 (Transform Message)
+Element DSL           : <ee:transform doc:name="Transform Message" doc:id="ece1fedc-f745-4178-b085-a264175b7304">
+<ee:message>
+<ee:set-payload><![CDATA[
+%dw 2.0
+output application/json
+---
+payload
+]]></ee:set-payload>
+</ee:message>
+</ee:transform>
+Error type            : MULE:EXPRESSION
+FlowStack             : at datawaveFlow(datawaveFlow/processors/0 @ datawave:datawave.xml:13 (Transform Message))
+
+  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+
+ERROR 2021-12-24 11:30:01,369 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @17cb327f] [processor: ; event: bb5acdf0-647e-11ec-8569-ac120301260c] org.mule.runtime.core.internal.exception.OnErrorPropagateHandler: 
+********************************************************************************
+Message               : "Unexpected character 'u' at payload@[2:15] (line:column), expected false or true or null or {...} or [...] or number but was , while reading `payload` as Json.
+ 
+2|     "airline":united",
+                 ^" evaluating expression: "%dw 2.0
+output application/json
+---
+payload".
+Element               : datawaveFlow/processors/0 @ datawave:datawave.xml:13 (Transform Message)
+Element DSL           : <ee:transform doc:name="Transform Message" doc:id="ece1fedc-f745-4178-b085-a264175b7304">
+<ee:message>
+<ee:set-payload><![CDATA[
+%dw 2.0
+output application/json
+---
+payload
+]]></ee:set-payload>
+</ee:message>
+</ee:transform>
+Error type            : MULE:EXPRESSION
+FlowStack             : at datawaveFlow(datawaveFlow/processors/0 @ datawave:datawave.xml:13 (Transform Message))
+
+  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************
+
+INFO  2021-12-24 11:30:18,318 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @17cb327f] [processor: datawaveFlow/processors/1; event: c5715ac0-647e-11ec-8569-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@5535f97
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:52202
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=application/json
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=b8d99f01-1f17-4f70-88ab-017848ae330c
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=243
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+INFO  2021-12-24 11:40:07,245 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@57b0208b'
+INFO  2021-12-24 11:40:07,276 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@57b0208b'
+INFO  2021-12-24 11:40:14,947 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx2.log
+INFO  2021-12-24 11:40:14,958 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx2.log
+INFO  2021-12-24 11:40:15,011 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 11:40:15,324 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: datawaveFlow
+INFO  2021-12-24 11:40:15,402 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-12-24 11:40:15,635 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2021-12-24 11:40:15,636 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2021-12-24 11:40:15,645 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 11:40:15,695 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: datawaveFlow
+INFO  2021-12-24 11:40:16,058 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+WARN  2021-12-24 11:40:16,061 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.configuration.descriptor.YamlMuleAgentDescriptor: Descriptor file E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\conf\datawave.yml not found.
+WARN  2021-12-24 11:40:16,061 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.services.application.AgentApplicationService: Application fragment not found for application: datawave
+INFO  2021-12-24 11:40:16,062 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: datawave                                              *
+* OS encoding: windows-1252, Mule encoding: UTF-8                    *
+*                                                                    *
+**********************************************************************
+INFO  2021-12-24 11:40:22,948 [[MuleRuntime].uber.08: [datawave].datawaveFlow.CPU_INTENSIVE @48a63684] [processor: datawaveFlow/processors/1; event: 2da0d7f0-6480-11ec-9c3c-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@2c50697f
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:52308
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=application/json
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=76528b68-0aad-4883-a7e9-192a6ba981d1
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=243
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+INFO  2021-12-24 11:55:45,811 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@1b94cf36'
+INFO  2021-12-24 11:55:45,841 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@1b94cf36'
+INFO  2021-12-24 11:55:52,933 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx2.log
+INFO  2021-12-24 11:55:52,944 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx2.log
+INFO  2021-12-24 11:55:52,991 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 11:55:53,281 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: datawaveFlow
+INFO  2021-12-24 11:55:53,378 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-12-24 11:55:53,592 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2021-12-24 11:55:53,592 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2021-12-24 11:55:53,599 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 11:55:53,639 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: datawaveFlow
+INFO  2021-12-24 11:55:53,930 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+WARN  2021-12-24 11:55:53,932 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.configuration.descriptor.YamlMuleAgentDescriptor: Descriptor file E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\conf\datawave.yml not found.
+WARN  2021-12-24 11:55:53,932 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.services.application.AgentApplicationService: Application fragment not found for application: datawave
+INFO  2021-12-24 11:55:53,933 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: datawave                                              *
+* OS encoding: windows-1252, Mule encoding: UTF-8                    *
+*                                                                    *
+**********************************************************************
+INFO  2021-12-24 11:56:02,696 [[MuleRuntime].uber.04: [datawave].datawaveFlow.CPU_INTENSIVE @485e15d2] [processor: datawaveFlow/processors/1; event: 5dc06a20-6482-11ec-ba4d-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@12867fd5
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:52458
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=application/json
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=9234f0ad-81e1-45b7-aef4-3038164a581c
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=243
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+INFO  2021-12-24 12:42:07,126 [[MuleRuntime].uber.05: [datawave].datawaveFlow.CPU_INTENSIVE @485e15d2] [processor: datawaveFlow/processors/1; event: cdaa9080-6488-11ec-ba4d-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@75014099
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:51592
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=application/json
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=a292615f-5bc3-4a98-8e14-bbb02f5426f9
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=243
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+INFO  2021-12-24 12:42:40,464 [[MuleRuntime].uber.05: [datawave].datawaveFlow.CPU_INTENSIVE @485e15d2] [processor: datawaveFlow/processors/1; event: e19486a0-6488-11ec-ba4d-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@412e42a4
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:51595
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=application/json
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=ed493e70-f405-47a2-bc1f-15891c6c80e8
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=243
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}
+INFO  2021-12-24 12:43:14,525 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@352d708b'
+INFO  2021-12-24 12:43:14,556 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@352d708b'
+INFO  2021-12-24 12:43:20,305 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx2.log
+INFO  2021-12-24 12:43:20,316 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx2.log
+INFO  2021-12-24 12:43:20,380 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 12:43:20,784 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: datawaveFlow
+INFO  2021-12-24 12:43:20,903 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-12-24 12:43:21,175 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2021-12-24 12:43:21,175 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2021-12-24 12:43:21,183 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 12:43:21,225 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: datawaveFlow
+INFO  2021-12-24 12:43:21,601 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+WARN  2021-12-24 12:43:21,604 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.configuration.descriptor.YamlMuleAgentDescriptor: Descriptor file E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\conf\datawave.yml not found.
+WARN  2021-12-24 12:43:21,605 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.services.application.AgentApplicationService: Application fragment not found for application: datawave
+INFO  2021-12-24 12:43:21,605 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: datawave                                              *
+* OS encoding: windows-1252, Mule encoding: UTF-8                    *
+*                                                                    *
+**********************************************************************
+INFO  2021-12-24 12:43:54,146 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@5a03f329'
+INFO  2021-12-24 12:43:54,182 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@5a03f329'
+INFO  2021-12-24 12:43:58,358 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-tx-log\tx2.log
+INFO  2021-12-24 12:43:58,366 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx1.log and E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\.\.mule\datawave\queue-xa-tx-log\tx2.log
+INFO  2021-12-24 12:43:58,418 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 12:43:58,680 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: datawaveFlow
+INFO  2021-12-24 12:43:58,755 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2021-12-24 12:43:58,931 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2021-12-24 12:43:58,932 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2021-12-24 12:43:58,939 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2021-12-24 12:43:58,973 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: datawaveFlow
+INFO  2021-12-24 12:43:59,211 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+WARN  2021-12-24 12:43:59,213 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.configuration.descriptor.YamlMuleAgentDescriptor: Descriptor file E:\AnypointStudio-7.11.0-win64\AnypointStudio\plugins\org.mule.tooling.server.4.4.0.ee_7.11.0.202109220119\mule\conf\datawave.yml not found.
+WARN  2021-12-24 12:43:59,213 [ArtifactDeployer.start.01] [processor: ; event: ] com.mulesoft.agent.services.application.AgentApplicationService: Application fragment not found for application: datawave
+INFO  2021-12-24 12:43:59,213 [ArtifactDeployer.start.01] [processor: ; event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: datawave                                              *
+* OS encoding: windows-1252, Mule encoding: UTF-8                    *
+*                                                                    *
+**********************************************************************
+INFO  2021-12-24 12:44:13,645 [[MuleRuntime].uber.02: [datawave].datawaveFlow.CPU_INTENSIVE @5b335076] [processor: datawaveFlow/processors/1; event: 190f4110-6489-11ec-95e1-ac120301260c] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+org.mule.runtime.core.internal.message.DefaultMessageBuilder$MessageImplementation
+{
+  payload=org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider@3b32388a
+  mediaType=application/json; charset=UTF-8
+  attributes=org.mule.extension.http.api.HttpRequestAttributes
+{
+   Request path=/datawave
+   Raw request path=/datawave
+   Method=GET
+   Listener path=/datawave
+   Local Address=/127.0.0.1:8081
+   Query String=
+   Relative Path=/datawave
+   Masked Request Path=null
+   Remote Address=/127.0.0.1:51723
+   Request Uri=/datawave
+   Raw request Uri=/datawave
+   Scheme=http
+   Version=HTTP/1.1
+   Headers=[
+      content-type=application/json
+      user-agent=PostmanRuntime/7.28.4
+      accept=*/*
+      postman-token=002673d4-efb7-47b3-832e-83ee25aedf2c
+      host=localhost:8081
+      accept-encoding=gzip, deflate, br
+      connection=keep-alive
+      content-length=243
+   ]
+   Query Parameters=[]
+   URI Parameters=[]
+}
+  attributesMediaType=*/*
+}

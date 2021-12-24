@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c4c5121f-1f9c-4e40-8647-41b13f49d203" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="datawaveFlow" doc:id="dd01278a-4fe2-4382-82bb-c48a91da7c02" >
+		<http:listener doc:name="Listener" doc:id="98b61634-d34b-447b-a778-b99e2c485ed1" config-ref="HTTP_Listener_config" path="/datawave"/>
+		<ee:transform doc:name="Transform Message" doc:id="ece1fedc-f745-4178-b085-a264175b7304" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+    "airline":"united",
+    "fight code":"ER38sd",
+    "fromAirportCode":"LAX",
+    "toAirportCode":"SFO",
+    "departureData":"dec 24,2021",
+    "emptySeats":0,
+    "totalSeats":200,
+    "price":199,
+    "planeType":"boeing 737"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="f97cb79d-6358-40e4-bd33-186f82e8aaa1" />
+	</flow>
+</mule>
